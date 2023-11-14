@@ -1,11 +1,9 @@
 spring:
   batch:
-    job:
-      name: purchaseConfirmedJob
-
     jdbc:
       initialize-schema: always
-
+    job:
+      name: ${job.name:NONE}
   jpa:
     show-sql: true
     properties:
